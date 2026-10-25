@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Rapport d’activité – Alternance Safran Aircraft Engines</title>
+<style>
+  :root {
+    --bg: #f3f5f8;
+    --surface: #ffffff;
+    --ink: #14213d;
+    --muted: #5b6577;
+    --accent: #1f5fae;
+    --line: #d7dde6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0e1522;
+      --surface: #16202f;
+      --ink: #e8edf5;
+      --muted: #9aa6b8;
+      --accent: #6aa5ee;
+      --line: #263449;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: flex; flex-direction: column;
+    background: var(--bg); color: var(--ink);
+    font-family: "Segoe UI", system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  }
+  header {
+    display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+    gap: .75rem 1.5rem; padding: .9rem clamp(1rem, 4vw, 2.5rem);
+    background: var(--surface); border-bottom: 1px solid var(--line);
+  }
+  h1 { margin: 0; font-size: 1.15rem; font-weight: 600; }
+  p.sub { margin: .15rem 0 0; font-size: .9rem; color: var(--muted); }
+  a.btn {
+    padding: .55rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600;
+    background: var(--accent); color: #fff;
+  }
+  a.btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 2px; }
+  main { flex: 1; min-height: 0; }
+  object { width: 100%; height: 100%; border: 0; display: block; }
+  .fallback { padding: 2rem clamp(1rem, 4vw, 2.5rem); }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>Rapport d’activité – Safran Aircraft Engines</h1>
+    <p class="sub">Clémentin Perrault · IUT de Ville d’Avray, département GMP</p>
+  </div>
+  <a class="btn" href="rapport.pdf" download>Télécharger le PDF</a>
+</header>
+<main>
+  <object data="rapport.pdf#view=FitH" type="application/pdf" aria-label="Rapport d’activité en PDF">
+    <div class="fallback">
+      <p>Votre navigateur n’affiche pas les PDF directement.</p>
+      <p><a href="rapport.pdf">Ouvrir le rapport</a></p>
+    </div>
+  </object>
+</main>
+</body>
+</html>
